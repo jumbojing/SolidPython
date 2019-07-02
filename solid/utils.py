@@ -1264,3 +1264,34 @@ def obj_tree_str(sp_obj, vars_to_print=None):
         s += indent(obj_tree_str(c, vars_to_print))
 
     return s
+# 旋转和移动
+
+def T(x, y, z):
+    return translate([x, y, z])
+
+def Tx(x):
+    return translate([x,0,0])
+
+
+def Ty(y):
+    return translate([0,y,0])
+
+
+def Tz(z):
+    return translate([0,0,z])
+
+
+def Rx(x=90):
+    return rotate([x,0,0])
+
+def R(x, y, z):
+    return rotate([x, y, z])
+
+
+def Ry(y=90):
+    return rotate([0,y,0])
+
+
+def Rz(z=90):
+    return rotate([0,0,z])
+
