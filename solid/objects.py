@@ -662,3 +662,41 @@ def use(scad_file_path, use_not_include=True, dest_namespace_dict=None):
 
 def include(scad_file_path):
     return use(scad_file_path, use_not_include=False)
+
+Ci= circle #圆
+
+Sq= square #方
+
+P2 = polygon #([points],[paths])多边形
+
+Sp= sphere #(radius | d=diameter) 球
+
+Cu= cube #(size, center) or cube([width,depth,height], center) 立方
+
+Cy= cylinder #(h,r|d,center) or cylinder(h,r1|d1,r2|d2,center) 锥柱
+
+P3 = polyhedron #(points, triangles, convexity) 多面体
+
+Mi= mirror #镜像
+
+Of = offset # 偏移
+
+C= color #色
+
+Le= linear_extrude #(height,center,convexity,twist,slices,scale) 线拖
+
+Re= rotate_extrude #(angle,convexity) 旋拖
+
+dxf_Le=  dxf_linear_extrude #dxf拖
+
+Pr= projection #(cut) 投影
+
+Sf= surface #(file = "….dat",center,convexity)
+
+deb= debug ##
+
+bac= background # !
+
+roo= root # %
+
+dis= disable # *
